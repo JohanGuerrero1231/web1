@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Pasear Perros</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/estilo.css"/>
+    </head>
+    <body>
+    <center>
+        <div id="Titulo">Pasear Perros</div>
+
+        <img id="imagen" src="https://i.pinimg.com/736x/a0/d0/97/a0d09762e9716b20fae1d4d06794bc92.jpg" alt="alt"/>
+        <p id="Jperro">Cantidad de perros:   <input type="number" id="Lperro"></p>
+        <input type="submit" id="Ingresar" value="Ingresar" name="Ingresar" onclick="Ingresar()">
+        <br>
+        <br>
+        <p id="Elige">------------------Elige o Rellena-----------------</p>
+        <p id="Jtamaño">¿Que tamaño tiene?:   <select id="Ltamaño">
+                <option value="0" id="cero">Elige</option> 
+                <option value="1" id="uno">Grande</option>
+                <option value="2" id="dos">Mediano</option>
+                <option value="3" id="tres">Pequeño</option>
+            </select></p>
+        <p id="Jhoras">¿Cuentas horas de paseo para ese perro?:    <input type="number" id="Lhoras" name="Lhoras"></p>
+        <input type="submit" value="Siguiente" id="Siguiente" name="Siguiente" onclick="Siguiente()">
+        <br>
+        <input type="submit" value="Calcular" id="Calcular" name="Calcular" onclick="Calcular()">
+        <p id="Jtotal">Total a pagar:<input type="text" id="Ltotal" readonly="readonly"></p>
+        <br>
+        <br>
+        <input type="submit" id="reset" value="Reiniciar" onclick="reset()">
+    </center>
+
+
+
+</body>
+</html>
